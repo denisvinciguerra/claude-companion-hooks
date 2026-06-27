@@ -1,0 +1,9 @@
+{
+  "name": "code-critter",
+  "description": "Powers the live tiles (Fleet, Session Status, Session, and the companion's mood) of the Code Critter Stream Deck plugin by recording local session state to ~/.claude/deck-state. Tokens, cost and activity work without it; this adds the live session/fleet view. 100% local, no network, zero dependency: a single Bash script run by the shell Claude Code already uses for hooks (works on macOS, Linux and Windows/Git Bash).",
+  "version": "1.0.1",
+  "author": {
+    "name": "Synlink"
+  },
+  "license": "Apache-2.0"
+}

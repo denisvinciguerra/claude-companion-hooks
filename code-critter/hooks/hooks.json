@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" done - -" }] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" working runs new" }] }
+    ],
+    "PreToolUse": [
+      { "matcher": "*", "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" working - -" }] }
+    ],
+    "PostToolUse": [
+      { "matcher": "*", "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" working - -" }] }
+    ],
+    "PermissionRequest": [
+      { "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" waiting perms -" }] }
+    ],
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" done - -" }] }
+    ],
+    "SessionEnd": [
+      { "hooks": [{ "type": "command", "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/claude-state-hook.sh\" del - -" }] }
+    ]
+  }
+}

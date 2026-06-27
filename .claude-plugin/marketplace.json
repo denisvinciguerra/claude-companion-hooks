@@ -1,0 +1,14 @@
+{
+  "name": "code-critter",
+  "owner": {
+    "name": "Synlink",
+    "url": "https://synlink.fr"
+  },
+  "plugins": [
+    {
+      "name": "code-critter",
+      "source": "./code-critter",
+      "description": "Live Claude Code session state for the Code Critter Stream Deck plugin (and the standalone menubar app). 100% local."
+    }
+  ]
+}
